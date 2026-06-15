@@ -96,7 +96,8 @@
         "ducky_painting": "textures/entity/armor_stand/paintings/ducky_painting",
         "ducky_painting_simple": "textures/entity/armor_stand/paintings/ducky_painting_simple",
         "ducky_painting_vibrant": "textures/entity/armor_stand/paintings/ducky_painting_vibrant",
-        "ducky_painting_vibrant_simple": "textures/entity/armor_stand/paintings/ducky_painting_vibrant_simple"
+        "ducky_painting_vibrant_simple": "textures/entity/armor_stand/paintings/ducky_painting_vibrant_simple",
+        "we_are_here_name_2_invincible": "textures/entity/armor_stand/paintings/we_are_here_name_2_invincible"
       },
       "animations": {
         "invisible": "animation.pose.item_display",
@@ -192,7 +193,7 @@
         },
         "controller.render.armor_stand",
         {
-          "controller.render.armor_stand_painting": "q.is_name_any('Ducky','Ducky§s','Ducky§v','Ducky§v§s','The Thief','Joy','Forg Knight','Tragedy','Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower')"
+          "controller.render.armor_stand_painting": "q.is_name_any('We Are Here','Ducky','Ducky§s','Ducky§v','Ducky§v§s','The Thief','Joy','Forg Knight','Tragedy','Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower')"
         }
       ],
       "enable_attachables": true
