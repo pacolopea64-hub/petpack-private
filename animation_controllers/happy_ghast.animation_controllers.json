@@ -18,7 +18,10 @@
         "default": {
           "animations": [
             {"villager_copter_prop":"q.is_name_any('Villager Helicopter§o§m§a§r','Villager Helicopter')"},
-            {"bee_flying":"q.is_name_any('Definitely a Bee')"}
+            {"bee_flying":"q.is_name_any('Definitely a Bee')"},
+            {"ufo_rotate": "q.is_name_any('The Orb','Orb','UFO')"},
+            {"ufo_energy":"q.is_name_any('The Orb','Orb','UFO')"},
+            {"ufo_bob":"q.is_name_any('The Orb','Orb','UFO')"}
           ]
         }
       }
