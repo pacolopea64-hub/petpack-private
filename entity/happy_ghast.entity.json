@@ -5,7 +5,8 @@
       "identifier": "minecraft:happy_ghast",
       "materials": {
         "default": "ghast",
-        "entity_alphablend": "entity_alphablend"
+        "entity_alphablend": "entity_alphablend",
+        "entity_emissive_alpha_one_sided": "entity_emissive_alpha_one_sided"
       },
       "geometry": {
         "default": "geometry.happy_ghast",
@@ -14,7 +15,8 @@
         "ghastlypumpkin": "geometry.ghastlypumpkin",
         "smol_ghast": "geometry.smol_ghast",
         "happy_ghast_bee": "geometry.happy_ghast_bee",
-        "happy_ghast_sulfur_cube": "geometry.happy_ghast_sulfur_cube"
+        "happy_ghast_sulfur_cube": "geometry.happy_ghast_sulfur_cube",
+        "happy_ghast_ufo_orb": "geometry.happy_ghast_ufo_orb"
       },
       "textures": {
         "ghastling": "textures/entity/happy_ghast/ghastling",
@@ -25,7 +27,8 @@
         "ghastlypumpkin": "textures/entity/happy_ghast/ghastlypumpkin",
         "ghastling_saddled": "textures/entity/happy_ghast/ghastling_saddled",
         "happy_ghast_bee": "textures/entity/bee/bee",
-        "happy_ghast_sulfur_cube": "textures/entity/happy_ghast/happy_ghast_sulfur_cube"
+        "happy_ghast_sulfur_cube": "textures/entity/happy_ghast/happy_ghast_sulfur_cube",
+        "happy_ghast_ufo_orb": "textures/entity/happy_ghast/happy_ghast_ufo_orb"
       },
       "render_controllers": [
         "controller.render.happy_ghast",
@@ -54,7 +57,10 @@
         "villager_copter_prop": "animation.happy_ghast.villager_copter_prop",
         "custom_always_active": "controller.animation.happy_ghast.custom_always_active",
         "move_smol": "animation.happy_ghast.move_smol",
-        "bee_flying": "animation.bee.flying"
+        "bee_flying": "animation.bee.flying",
+        "ufo_rotate": "animation.happy_ghast.ufo_rotate",
+        "ufo_energy":"animation.happy_ghast.ufo_energy",
+        "ufo_bob":"animation.happy_ghast.ufo_bob"
       },
       "enable_attachables": true,
       "spawn_egg": {
