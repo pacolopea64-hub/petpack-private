@@ -39,12 +39,14 @@
         "armor_copper": "textures/entity/horse2/armor/horse_armor_copper",
         "armor_netherite": "textures/entity/horse2/armor/horse_armor_netherite",
         "crocodile_castle_crashers":"textures/entity/horse2/crocodile_castle_crashers",
-        "blank":"textures/blank"
+        "blank":"textures/blank",
+        "unicorn_horse":"textures/entity/horse2/unicorn_horse"
       },
       "geometry": {
         "default": "geometry.horse.v3",
         "baby": "geometry.horse.baby",
-        "crocodile_castle_crashers": "geometry.crocodile_castle_crashers"
+        "crocodile_castle_crashers": "geometry.crocodile_castle_crashers",
+        "unicorn_horse":"geometry.unicorn_horse"
       },
       "animations": {
         "walk": "animation.horse.v3.walk",
