@@ -59,7 +59,8 @@
         "cyn_murder_drones_eyes": "textures/entity/copper_golem/cyn_murder_drones_eyes",
         "copper_golem_farmer": "textures/entity/copper_golem/copper_golem_farmer",
         "gentleman_run3": "textures/entity/copper_golem/gentleman_run3",
-        "duplicator_run3": "textures/entity/copper_golem/duplicator_run3"
+        "duplicator_run3": "textures/entity/copper_golem/duplicator_run3",
+        "pastafarian_run3": "textures/entity/copper_golem/pastafarian_run3"
       },
       "geometry": {
         "default": "geometry.copper_golem",
@@ -74,7 +75,8 @@
         "cyn_murder_drones_golem": "geometry.cyn_murder_drones_golem",
         "copper_golem_farmer": "geometry.copper_golem_farmer",
         "gentleman_run3": "geometry.gentleman_run3",
-        "duplicator_run3": "geometry.duplicator_run3"
+        "duplicator_run3": "geometry.duplicator_run3",
+        "pastafarian_run3": "geometry.pastafarian_run3"
       },
       "animations": {
         "look_at_target": "animation.common.look_at_target",
