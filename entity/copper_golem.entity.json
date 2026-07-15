@@ -1,1 +1,154 @@
-{"format_version":"1.10.0","minecraft:client_entity":{"description":{"identifier":"minecraft:copper_golem","min_engine_version":"1.12.0","materials":{"default":"copper_golem","eyes":"copper_golem_eyes","flower":"copper_golem_flower","entity_alphatest":"entity_alphatest","entity_emissive_alpha_one_sided":"entity_emissive_alpha_one_sided","entity_alphablend":"entity_alphatest"},"textures":{"default":"textures/entity/copper_golem/copper_golem","exposed":"textures/entity/copper_golem/copper_golem_exposed","weathered":"textures/entity/copper_golem/copper_golem_weathered","oxidized":"textures/entity/copper_golem/copper_golem_oxidized","eyes_default":"textures/entity/copper_golem/copper_golem_eyes","eyes_exposed":"textures/entity/copper_golem/copper_golem_eyes_exposed","eyes_weathered":"textures/entity/copper_golem/copper_golem_eyes_weathered","eyes_oxidized":"textures/entity/copper_golem/copper_golem_eyes_oxidized","flower":"textures/entity/copper_golem/copper_golem_flower","test":"textures/entity/copper_golem/test","sans":"textures/entity/copper_golem/sans","jack_o_Lantern":"textures/entity/copper_golem/jack_o_Lantern","blank":"textures/blank","amogus":"textures/entity/copper_golem/amogus/amogus","amogus_0":"textures/entity/copper_golem/amogus/amogus_0","amogus_1":"textures/entity/copper_golem/amogus/amogus_1","amogus_2":"textures/entity/copper_golem/amogus/amogus_2","amogus_3":"textures/entity/copper_golem/amogus/amogus_3","amogus_4":"textures/entity/copper_golem/amogus/amogus_4","amogus_5":"textures/entity/copper_golem/amogus/amogus_5","amogus_6":"textures/entity/copper_golem/amogus/amogus_6","amogus_7":"textures/entity/copper_golem/amogus/amogus_7","amogus_8":"textures/entity/copper_golem/amogus/amogus_8","amogus_9":"textures/entity/copper_golem/amogus/amogus_9","amogus_a":"textures/entity/copper_golem/amogus/amogus_a","amogus_b":"textures/entity/copper_golem/amogus/amogus_b","amogus_c":"textures/entity/copper_golem/amogus/amogus_c","amogus_d":"textures/entity/copper_golem/amogus/amogus_d","amogus_e":"textures/entity/copper_golem/amogus/amogus_e","amogus_f":"textures/entity/copper_golem/amogus/amogus_f","amogus_g":"textures/entity/copper_golem/amogus/amogus_g","amogus_h":"textures/entity/copper_golem/amogus/amogus_h","amogus_i":"textures/entity/copper_golem/amogus/amogus_i","amogus_j":"textures/entity/copper_golem/amogus/amogus_j","amogus_m":"textures/entity/copper_golem/amogus/amogus_m","amogus_n":"textures/entity/copper_golem/amogus/amogus_n","amogus_p":"textures/entity/copper_golem/amogus/amogus_p","amogus_q":"textures/entity/copper_golem/amogus/amogus_q","amogus_s":"textures/entity/copper_golem/amogus/amogus_s","amogus_t":"textures/entity/copper_golem/amogus/amogus_t","amogus_u":"textures/entity/copper_golem/amogus/amogus_u","amogus_v":"textures/entity/copper_golem/amogus/amogus_v","cyn_murder_drones":"textures/entity/copper_golem/cyn_murder_drones","cyn_murder_drones_eyes":"textures/entity/copper_golem/cyn_murder_drones_eyes","copper_golem_farmer":"textures/entity/copper_golem/copper_golem_farmer"},"geometry":{"default":"geometry.copper_golem","flower":"geometry.copper_golem.flower","standing":"geometry.copper_golem","sitting":"geometry.copper_golem.sitting","running":"geometry.copper_golem.running","star":"geometry.copper_golem.star","sans":"geometry.sans","jack_o_Lantern":"geometry.jack_o_Lantern","amogus":"geometry.amogus","cyn_murder_drones_golem":"geometry.cyn_murder_drones_golem","copper_golem_farmer":"geometry.copper_golem_farmer"},"animations":{"look_at_target":"animation.common.look_at_target","walk":"animation.copper_golem.walk","walk_holding_item":"animation.copper_golem.walk_holding_item","spin":"animation.copper_golem.spin","spin_weathered":"animation.copper_golem.spin.weathered","spin_oxidized":"animation.copper_golem.spin.oxidized","walk_controller":"controller.animation.copper_golem.walk","hold_item":"animation.copper_golem.hold_item","idle_controller":"controller.animation.copper_golem.idle","chest_interaction_controller":"controller.animation.copper_golem.chest_interaction","chest_interaction.put_item":"animation.copper_golem.chest_interaction.put_item","chest_interaction.put_item_fail":"animation.copper_golem.chest_interaction.put_item_fail","chest_interaction.take_item":"animation.copper_golem.chest_interaction.take_item","chest_interaction.take_item_fail":"animation.copper_golem.chest_interaction.take_item_fail","amogus_scale":"animation.copper_golem.amogus_scale","amogus_scale_controller":"controller.animation.copper_golem.amogus_scale"},"scripts":{"pre_animation":["v.oxidation = query.property('minecraft:oxidation_level');","v.index = (v.oxidation == 'unoxidized') ? 0 : ((v.oxidation == 'exposed') ? 1 : ((v.oxidation == 'weathered') ? 2 : 3 ));","v.walking = query.modified_move_speed > 0.01;","v.chest_interaction = query.property('minecraft:chest_interaction');"],"animate":["look_at_target",{"walk_controller":"query.property('minecraft:chest_interaction') == 'none'"},{"idle_controller":"query.property('minecraft:chest_interaction') == 'none'"},"chest_interaction_controller","amogus_scale_controller"],"should_update_effects_offscreen":"1.0"},"sound_effects":{"spin":"mob.copper_golem.spin","spin_weathered":"mob.copper_golem.weathered.spin","spin_oxidized":"mob.copper_golem.oxidized.spin","put_item":"mob.copper_golem.chest_interaction.put_item","put_item_fail":"mob.copper_golem.chest_interaction.put_item_fail","take_item":"mob.copper_golem.chest_interaction.take_item","take_item_fail":"mob.copper_golem.chest_interaction.take_item_fail"},"render_controllers":["controller.render.copper_golem_flower","controller.render.copper_golem","controller.render.copper_golem_eyes"],"spawn_egg":{"texture":"spawn_egg_copper_golem"},"enable_attachables":true}}}
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:copper_golem",
+      "min_engine_version": "1.12.0",
+      "materials": {
+        "default": "copper_golem",
+        "eyes": "copper_golem_eyes",
+        "flower": "copper_golem_flower",
+        "entity_alphatest": "entity_alphatest",
+        "entity_emissive_alpha_one_sided": "entity_emissive_alpha_one_sided",
+        "entity_alphablend": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/copper_golem/copper_golem",
+        "exposed": "textures/entity/copper_golem/copper_golem_exposed",
+        "weathered": "textures/entity/copper_golem/copper_golem_weathered",
+        "oxidized": "textures/entity/copper_golem/copper_golem_oxidized",
+        "eyes_default": "textures/entity/copper_golem/copper_golem_eyes",
+        "eyes_exposed": "textures/entity/copper_golem/copper_golem_eyes_exposed",
+        "eyes_weathered": "textures/entity/copper_golem/copper_golem_eyes_weathered",
+        "eyes_oxidized": "textures/entity/copper_golem/copper_golem_eyes_oxidized",
+        "flower": "textures/entity/copper_golem/copper_golem_flower",
+        "test": "textures/entity/copper_golem/test",
+        "sans": "textures/entity/copper_golem/sans",
+        "jack_o_Lantern": "textures/entity/copper_golem/jack_o_Lantern",
+        "blank": "textures/blank",
+        "amogus": "textures/entity/copper_golem/amogus/amogus",
+        "amogus_0": "textures/entity/copper_golem/amogus/amogus_0",
+        "amogus_1": "textures/entity/copper_golem/amogus/amogus_1",
+        "amogus_2": "textures/entity/copper_golem/amogus/amogus_2",
+        "amogus_3": "textures/entity/copper_golem/amogus/amogus_3",
+        "amogus_4": "textures/entity/copper_golem/amogus/amogus_4",
+        "amogus_5": "textures/entity/copper_golem/amogus/amogus_5",
+        "amogus_6": "textures/entity/copper_golem/amogus/amogus_6",
+        "amogus_7": "textures/entity/copper_golem/amogus/amogus_7",
+        "amogus_8": "textures/entity/copper_golem/amogus/amogus_8",
+        "amogus_9": "textures/entity/copper_golem/amogus/amogus_9",
+        "amogus_a": "textures/entity/copper_golem/amogus/amogus_a",
+        "amogus_b": "textures/entity/copper_golem/amogus/amogus_b",
+        "amogus_c": "textures/entity/copper_golem/amogus/amogus_c",
+        "amogus_d": "textures/entity/copper_golem/amogus/amogus_d",
+        "amogus_e": "textures/entity/copper_golem/amogus/amogus_e",
+        "amogus_f": "textures/entity/copper_golem/amogus/amogus_f",
+        "amogus_g": "textures/entity/copper_golem/amogus/amogus_g",
+        "amogus_h": "textures/entity/copper_golem/amogus/amogus_h",
+        "amogus_i": "textures/entity/copper_golem/amogus/amogus_i",
+        "amogus_j": "textures/entity/copper_golem/amogus/amogus_j",
+        "amogus_m": "textures/entity/copper_golem/amogus/amogus_m",
+        "amogus_n": "textures/entity/copper_golem/amogus/amogus_n",
+        "amogus_p": "textures/entity/copper_golem/amogus/amogus_p",
+        "amogus_q": "textures/entity/copper_golem/amogus/amogus_q",
+        "amogus_s": "textures/entity/copper_golem/amogus/amogus_s",
+        "amogus_t": "textures/entity/copper_golem/amogus/amogus_t",
+        "amogus_u": "textures/entity/copper_golem/amogus/amogus_u",
+        "amogus_v": "textures/entity/copper_golem/amogus/amogus_v",
+        "cyn_murder_drones": "textures/entity/copper_golem/cyn_murder_drones",
+        "cyn_murder_drones_eyes": "textures/entity/copper_golem/cyn_murder_drones_eyes",
+        "copper_golem_farmer": "textures/entity/copper_golem/copper_golem_farmer",
+        "gentleman_run3": "textures/entity/copper_golem/gentleman_run3",
+        "duplicator_run3": "textures/entity/copper_golem/duplicator_run3",
+        "pastafarian_run3": "textures/entity/copper_golem/pastafarian_run3",
+        "lizard_run3": "textures/entity/copper_golem/lizard_run3",
+        "student_run3": "textures/entity/copper_golem/student_run3",
+        "bunny_run3": "textures/entity/copper_golem/bunny_run3",
+        "ice_skater_run3": "textures/entity/copper_golem/ice_skater_run3",
+        "pirate_run3": "textures/entity/copper_golem/pirate_run3"
+      },
+      "geometry": {
+        "default": "geometry.copper_golem",
+        "flower": "geometry.copper_golem.flower",
+        "standing": "geometry.copper_golem",
+        "sitting": "geometry.copper_golem.sitting",
+        "running": "geometry.copper_golem.running",
+        "star": "geometry.copper_golem.star",
+        "sans": "geometry.sans",
+        "jack_o_Lantern": "geometry.jack_o_Lantern",
+        "amogus": "geometry.amogus",
+        "cyn_murder_drones_golem": "geometry.cyn_murder_drones_golem",
+        "copper_golem_farmer": "geometry.copper_golem_farmer",
+        "gentleman_run3": "geometry.gentleman_run3",
+        "duplicator_run3": "geometry.duplicator_run3",
+        "pastafarian_run3": "geometry.pastafarian_run3",
+        "lizard_run3": "geometry.lizard_run3",
+        "student_run3": "geometry.student_run3",
+        "bunny_run3": "geometry.bunny_run3",
+        "ice_skater_run3": "geometry.ice_skater_run3",
+        "pirate_run3": "geometry.pirate_run3"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "walk": "animation.copper_golem.walk",
+        "walk_holding_item": "animation.copper_golem.walk_holding_item",
+        "spin": "animation.copper_golem.spin",
+        "spin_weathered": "animation.copper_golem.spin.weathered",
+        "spin_oxidized": "animation.copper_golem.spin.oxidized",
+        "walk_controller": "controller.animation.copper_golem.walk",
+        "hold_item": "animation.copper_golem.hold_item",
+        "idle_controller": "controller.animation.copper_golem.idle",
+        "chest_interaction_controller": "controller.animation.copper_golem.chest_interaction",
+        "chest_interaction.put_item": "animation.copper_golem.chest_interaction.put_item",
+        "chest_interaction.put_item_fail": "animation.copper_golem.chest_interaction.put_item_fail",
+        "chest_interaction.take_item": "animation.copper_golem.chest_interaction.take_item",
+        "chest_interaction.take_item_fail": "animation.copper_golem.chest_interaction.take_item_fail",
+        "amogus_scale": "animation.copper_golem.amogus_scale",
+        "amogus_scale_controller": "controller.animation.copper_golem.amogus_scale",
+        "run3_walk": "animation.run3.walk",
+        "run3_put_item": "animation.run3.put_item",
+        "run3_put_item_fail": "animation.run3.put_item_fail",
+        "run3_take_item": "animation.run3.take_item",
+        "run3_take_item_fail": "animation.run3.take_item_fail"
+      },
+      "scripts": {
+        "pre_animation": [
+          "v.oxidation = query.property('minecraft:oxidation_level');",
+          "v.index = (v.oxidation == 'unoxidized') ? 0 : ((v.oxidation == 'exposed') ? 1 : ((v.oxidation == 'weathered') ? 2 : 3 ));",
+          "v.walking = query.modified_move_speed > 0.01;",
+          "v.chest_interaction = query.property('minecraft:chest_interaction');"
+        ],
+        "animate": [
+          "look_at_target",
+          {
+            "walk_controller": "query.property('minecraft:chest_interaction') == 'none'"
+          },
+          {
+            "idle_controller": "query.property('minecraft:chest_interaction') == 'none'"
+          },
+          "chest_interaction_controller",
+          "amogus_scale_controller"
+        ],
+        "should_update_effects_offscreen": "1.0"
+      },
+      "sound_effects": {
+        "spin": "mob.copper_golem.spin",
+        "spin_weathered": "mob.copper_golem.weathered.spin",
+        "spin_oxidized": "mob.copper_golem.oxidized.spin",
+        "put_item": "mob.copper_golem.chest_interaction.put_item",
+        "put_item_fail": "mob.copper_golem.chest_interaction.put_item_fail",
+        "take_item": "mob.copper_golem.chest_interaction.take_item",
+        "take_item_fail": "mob.copper_golem.chest_interaction.take_item_fail"
+      },
+      "render_controllers": [
+        "controller.render.copper_golem_flower",
+        "controller.render.copper_golem",
+        "controller.render.copper_golem_eyes"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg_copper_golem"
+      },
+      "enable_attachables": true
+    }
+  }
+}

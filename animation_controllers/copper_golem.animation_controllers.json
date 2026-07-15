@@ -1,1 +1,174 @@
-{"format_version":"1.10.0","animation_controllers":{"controller.animation.copper_golem.idle":{"initial_state":"selector","states":{"selector":{"transitions":[{"default":"v.oxidation == 'unoxidized' || v.oxidation == 'exposed'"},{"weathered":"v.oxidation == 'weathered'"},{"default":"v.oxidation == 'oxidized'"}]},"default":{"animations":["spin"],"transitions":[{"selector":"query.all_animations_finished"}]},"weathered":{"animations":["spin_weathered"],"transitions":[{"selector":"query.all_animations_finished"}]},"oxidized":{"animations":["spin_oxidized"],"transitions":[{"selector":"query.all_animations_finished"}]}}},"controller.animation.copper_golem.walk":{"initial_state":"default","states":{"default":{"animations":[{"walk":"v.walking"}],"transitions":[{"holding_item":"v.is_holding_right"}],"blend_transition":0.2},"holding_item":{"animations":[{"walk_holding_item":"v.walking"},"hold_item"],"transitions":[{"default":"!v.is_holding_right"}],"blend_transition":0.2}}},"controller.animation.copper_golem.amogus_scale":{"initial_state":"default","states":{"default":{"animations":[{"amogus_scale":"!(v.is_holding_right || (v.chest_interaction=='take_fail' ? 1:0) || (v.chest_interaction=='take' ? 1:0)) && q.is_name_any('Among Us','Among Us\u00a70','Among Us\u00a71','Among Us\u00a72','Among Us\u00a73','Among Us\u00a74','Among Us\u00a75','Among Us\u00a76','Among Us\u00a77','Among Us\u00a78','Among Us\u00a79','Among Us\u00a7a','Among Us\u00a7b','Among Us\u00a7c','Among Us\u00a7d','Among Us\u00a7e','Among Us\u00a7f','Among Us\u00a7g','Among Us\u00a7h','Among Us\u00a7i','Among Us\u00a7j','Among Us\u00a7m','Among Us\u00a7n','Among Us\u00a7p','Among Us\u00a7q','Among Us\u00a7s','Among Us\u00a7t','Among Us\u00a7u','Among Us\u00a7v')"}]}}},"controller.animation.copper_golem.chest_interaction":{"initial_state":"none","states":{"none":{"transitions":[{"put_item":"v.chest_interaction == 'put'"},{"put_item_fail":"v.chest_interaction == 'put_fail'"},{"take_item":"v.chest_interaction == 'take'"},{"take_item_fail":"v.chest_interaction == 'take_fail'"}],"blend_transition":0.2},"put_item":{"animations":["chest_interaction.put_item"],"transitions":[{"none":"query.all_animations_finished"}]},"put_item_fail":{"animations":["chest_interaction.put_item_fail"],"transitions":[{"none":"query.all_animations_finished"}]},"take_item":{"animations":["chest_interaction.take_item"],"transitions":[{"none":"query.all_animations_finished"}]},"take_item_fail":{"animations":["chest_interaction.take_item_fail"],"transitions":[{"none":"query.all_animations_finished"}]}}}}}
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.copper_golem.idle": {
+            "initial_state": "selector",
+            "states": {
+                "selector": {
+                    "transitions": [
+                        {
+                            "default": "v.oxidation == 'unoxidized' || v.oxidation == 'exposed'"
+                        },
+                        {
+                            "weathered": "v.oxidation == 'weathered'"
+                        },
+                        {
+                            "default": "v.oxidation == 'oxidized'"
+                        }
+                    ]
+                },
+                "default": {
+                    "animations": [
+                        "spin"
+                    ],
+                    "transitions": [
+                        {
+                            "selector": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "weathered": {
+                    "animations": [
+                        "spin_weathered"
+                    ],
+                    "transitions": [
+                        {
+                            "selector": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "oxidized": {
+                    "animations": [
+                        "spin_oxidized"
+                    ],
+                    "transitions": [
+                        {
+                            "selector": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.copper_golem.walk": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        {
+                            "walk": "v.walking && !q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                        },
+                        {
+                            "run3_walk": "v.walking && q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "holding_item": "v.is_holding_right"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "holding_item": {
+                    "animations": [
+                        {
+                            "walk_holding_item": "v.walking"
+                        },
+                        "hold_item"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!v.is_holding_right"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        },
+        "controller.animation.copper_golem.amogus_scale": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        {
+                            "amogus_scale": "!(v.is_holding_right || (v.chest_interaction=='take_fail' ? 1:0) || (v.chest_interaction=='take' ? 1:0)) && q.is_name_any('Among Us','Among Us\u00a70','Among Us\u00a71','Among Us\u00a72','Among Us\u00a73','Among Us\u00a74','Among Us\u00a75','Among Us\u00a76','Among Us\u00a77','Among Us\u00a78','Among Us\u00a79','Among Us\u00a7a','Among Us\u00a7b','Among Us\u00a7c','Among Us\u00a7d','Among Us\u00a7e','Among Us\u00a7f','Among Us\u00a7g','Among Us\u00a7h','Among Us\u00a7i','Among Us\u00a7j','Among Us\u00a7m','Among Us\u00a7n','Among Us\u00a7p','Among Us\u00a7q','Among Us\u00a7s','Among Us\u00a7t','Among Us\u00a7u','Among Us\u00a7v')"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.copper_golem.chest_interaction": {
+            "initial_state": "none",
+            "states": {
+                "none": {
+                    "transitions": [
+                        {
+                            "put_item": "v.chest_interaction == 'put' && !q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                        }, 
+                        {
+                            "run3_put_item": "v.chest_interaction == 'put' && q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                        },
+                        {
+                            "put_item_fail": "v.chest_interaction == 'put_fail' && !q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                        },
+                        {
+                            "run3_put_item_fail": "v.chest_interaction == 'put_fail' && q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                        },
+                        {
+                            "take_item": "v.chest_interaction == 'take' && !q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                        },
+                         {
+                            "run3_take_item": "v.chest_interaction == 'take' && q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                        },
+                        {
+                            "take_item_fail": "v.chest_interaction == 'take_fail' && !q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                        },
+                        {
+                            "run3_take_item_fail": "v.chest_interaction == 'take_fail' && q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "put_item": {
+                    "animations": [
+                        "chest_interaction.put_item"
+                    ],
+                    "transitions": [
+                        {
+                            "none": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "put_item_fail": {
+                    "animations": [
+                        "chest_interaction.put_item_fail"
+                    ],
+                    "transitions": [
+                        {
+                            "none": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "take_item": {
+                    "animations": [
+                        "chest_interaction.take_item"
+                    ],
+                    "transitions": [
+                        {
+                            "none": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "take_item_fail": {
+                    "animations": [
+                        "chest_interaction.take_item_fail"
+                    ],
+                    "transitions": [
+                        {
+                            "none": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
