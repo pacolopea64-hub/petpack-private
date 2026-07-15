@@ -104,7 +104,12 @@
         "chest_interaction.take_item": "animation.copper_golem.chest_interaction.take_item",
         "chest_interaction.take_item_fail": "animation.copper_golem.chest_interaction.take_item_fail",
         "amogus_scale": "animation.copper_golem.amogus_scale",
-        "amogus_scale_controller": "controller.animation.copper_golem.amogus_scale"
+        "amogus_scale_controller": "controller.animation.copper_golem.amogus_scale",
+        "run3_walk": "animation.run3.walk",
+        "run3_put_item": "animation.run3.put_item",
+        "run3_put_item_fail": "animation.run3.put_item_fail",
+        "run3_take_item": "animation.run3.take_item",
+        "run3_take_item_fail": "animation.run3.take_item_fail"
       },
       "scripts": {
         "pre_animation": [
