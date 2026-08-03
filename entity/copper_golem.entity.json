@@ -66,9 +66,8 @@
         "bunny_run3": "textures/entity/copper_golem/bunny_run3",
         "ice_skater_run3": "textures/entity/copper_golem/ice_skater_run3",
         "pirate_run3": "textures/entity/copper_golem/pirate_run3",
-        "lancer": "textures/entity/copper_golem/lancer",
-        "lancersweetlittleboy": "textures/entity/copper_golem/lancersweetlittleboy",
-        "lancerhandsome": "textures/entity/copper_golem/lancerhandsome"
+        "lancer": "textures/entity/copper_golem/lancer"
+        
       },
       "geometry": {
         "default": "geometry.copper_golem",
