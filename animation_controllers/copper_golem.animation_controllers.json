@@ -19,7 +19,7 @@
                 },
                 "default": {
                     "animations": [
-                        "spin"
+                        "spin && !q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
                     ],
                     "transitions": [
                         {
@@ -29,7 +29,7 @@
                 },
                 "weathered": {
                     "animations": [
-                        "spin_weathered"
+                        "spin_weathered && !q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
                     ],
                     "transitions": [
                         {
@@ -39,7 +39,7 @@
                 },
                 "oxidized": {
                     "animations": [
-                        "spin_oxidized"
+                        "spin_oxidized && !q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
                     ],
                     "transitions": [
                         {
